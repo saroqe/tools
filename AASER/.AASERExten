@@ -1,1 +1,2 @@
-print("Extension found!")
+def ExtenFound():
+  print("Extension found!")
