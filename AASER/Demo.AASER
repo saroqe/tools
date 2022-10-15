@@ -1,0 +1,57 @@
+import sys
+import os.path
+from os import path
+import time
+def main():
+   print("Checking if .AASERExten exists.")
+   time.sleep(1)
+   print("Checking if .AASERExten exists.. 25%")
+   time.sleep(1)
+   print("Checking if .AASERExten exists.. 50%")
+   time.sleep(1)
+   print("Checking if .AASERExten exists.. 75%") 
+   time.sleep(2)
+   check = print("Checking if .AASERExten exists... "+str(path.exists('Exten.AASERExten')))
+   check
+
+main()
+time.sleep(2)
+import requests
+print(''' 
+The .AASERExten is the extras file for .AASER, .AS. Expect only .AASERR and .AASERExten to be updated.
+Expect only the .AASER to be updated.''')
+time.sleep(2)
+print(".AASERR will contain various functions for hardware communication, it is recommended to download that for the latest hardware functions.")
+time.sleep(2)
+
+
+
+   
+   
+
+
+
+
+print("There will also be one more exten, .AASERR")
+time.sleep(1)
+print("It is .AASERR, but required to download.")
+time.sleep(2)
+no = ["N", "n", "no", "No"]
+yes = ["Y", "y", "Yes", "yes"]
+success = "Righty then, downloading .AASERR..."
+err = "Err: Failed to Download, idk why"
+answer = input("do you want to download the .AASERExten? (Y/n) :")
+if answer in yes:
+  print(success)
+  time.sleep(2)
+  print("Searching for download...")
+  requests.get("https://github.com/Vepsiee/tools/blob/main/AASER/.AASERExten")
+  time.sleep(7)
+
+  print("The Following download could not be found: MIXED, Download Could not be found, or failed to download.")
+elif answer in no:
+  print("Ok then!")
+else:
+  print("The Following download could not be found: 404, Download not found.")
+
+
